@@ -1,76 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header>
-      <div class="navbar">
-        <h1>MyBootstrapSite</h1>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="active">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap JavaScript Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <!-- Navigation -->
+  <header>  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Shiina Mahiru</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
           </ul>
-        </nav>
+        </div>
       </div>
-    </header>
+    </nav>  
+  </header>
 
-    <main>
-      <section class="about-intro">
-        <div class="container">
-          <h2>About Us</h2>
-          <p>
-            We are dedicated to creating innovative and responsive web
-            applications. Our goal is to deliver high-quality solutions tailored
-            to user needs.
-          </p>
-          <img src="placeholder.jpg" alt="About Us Image" />
+   <!-- Main Content -->
+   <main class="py-5">
+    <div class="container">
+      <!-- About Section -->
+      <section class="about-intro text-center">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <h2 class="mb-4">Who We Are</h2>
+            <p class="lead">
+              At <strong>Shiina Mahiru</strong>, we specialize in crafting intuitive, visually stunning, and high-performance websites.  
+              Our passion for innovation drives us to deliver cutting-edge digital solutions that enhance user experiences.  
+            </p>
+          </div>
+          <div class="col-md-6">
+            <img src="about-us.jpg" alt="About Us Image" class="img-fluid rounded shadow">
+          </div>
         </div>
       </section>
 
-      <section class="our-mission">
-        <div class="container">
-          <h2>Our Mission</h2>
-          <p>
-            Our mission is to build user-friendly, scalable, and modern websites
-            that enhance digital experiences for individuals and businesses
-            alike.
-          </p>
+      <!-- Mission Section -->
+      <section class="our-mission text-center mt-5">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <h2 class="mb-4">Our Mission</h2>
+            <p class="lead">
+              We believe in making the web a more dynamic, accessible, and engaging space.  
+              Our mission is to <strong>empower businesses and individuals</strong> by providing modern, user-friendly, and scalable web solutions.  
+              We focus on <strong>creativity, efficiency, and seamless functionality</strong> to transform ideas into impactful digital experiences.
+            </p>
+          </div>
         </div>
       </section>
-    </main>
 
-    <footer>
-      <div class="footer-container">
-        <div class="footer-about">
-          <h3>About Us</h3>
+      <!-- Core Values Section -->
+      <section class="our-values text-center mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card shadow-sm p-4">
+                <h3>Innovation</h3>
+                <p>We stay ahead of trends to deliver forward-thinking web solutions.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card shadow-sm p-4">
+                <h3>User Experience</h3>
+                <p>Every project is designed with the end-user in mind, ensuring seamless interactions.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card shadow-sm p-4">
+                <h3>Reliability</h3>
+                <p>We prioritize performance, security, and efficiency in every development process.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>About Us</h5>
           <p>We create innovative and responsive web applications.</p>
         </div>
-        <div class="footer-links">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Services</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
           </ul>
         </div>
-        <div class="footer-social">
-          <h3>Follow Us</h3>
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-          </ul>
+        <div class="col-md-4 text-center">
+          <h5>Follow Us</h5>
+          <a href="#" class="text-white me-2">Facebook</a>
+          <a href="#" class="text-white me-2">Twitter</a>
+          <a href="#" class="text-white">Instagram</a>
         </div>
       </div>
-    </footer>
-    
-    <script src="script.js"></script>
-  </body>
+      <hr />
+      <p class="text-center">&copy; 2024 Shiina Mahiru x Patanao. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
 </html>
